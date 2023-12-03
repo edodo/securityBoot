@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TokenProviderTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TokenProviderTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/me.study.config.jwt.html">me.study.config.jwt</a> &gt; TokenProviderTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.178s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">generateToken(): 유저 정보와 만료 기간을 전달홰 토큰을 만들 수 있다.</td>
+<td class="success">generateToken()</td>
+<td class="success">0.290s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAuthentication(): 토큰 기반으로 인증 정보를 가져올 수 있다.</td>
+<td class="success">getAuthentication()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getUserId(): 토큰으로 유저 ID를 가져올 수 있다.</td>
+<td class="success">getUserid()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validToken() : 만료된 토큰인 때에 유효성 검증에 실패한다.</td>
+<td class="success">validToken_invalidToken()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validToken(): 유효한 토큰인 때에 유효성 검증에 성공한다.</td>
+<td class="success">validToken_validToken()</td>
+<td class="success">0.847s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>01:52:15.543 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TokenProviderTest]: using SpringBootContextLoader
+01:52:15.551 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [me.study.config.jwt.TokenProviderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+01:52:15.553 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [me.study.config.jwt.TokenProviderTest]: TokenProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:52:15.604 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [TokenProviderTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+01:52:15.765 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\workspace\securityBoot\build\classes\java\main\me\study\SecurityBoot.class]
+01:52:15.769 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration me.study.SecurityBoot for test class me.study.config.jwt.TokenProviderTest
+01:52:16.078 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [TokenProviderTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, WithSecurityContextTestExecutionListener, EventPublishingTestExecutionListener, ReactorContextTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+01:52:16.081 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [TokenProviderTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.2)
+
+2023-12-04T01:52:16.929+09:00  INFO 10828 --- [    Test worker] me.study.config.jwt.TokenProviderTest    : Starting TokenProviderTest using Java 17.0.5 with PID 10828 (started by grace in E:\workspace\securityBoot)
+2023-12-04T01:52:16.932+09:00  INFO 10828 --- [    Test worker] me.study.config.jwt.TokenProviderTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-12-04T01:52:18.210+09:00  INFO 10828 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-04T01:52:18.321+09:00  INFO 10828 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2023-12-04T01:52:19.223+09:00  INFO 10828 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-04T01:52:19.571+09:00  INFO 10828 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-12-04T01:52:19.574+09:00  INFO 10828 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-04T01:52:19.656+09:00  INFO 10828 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-04T01:52:19.776+09:00  INFO 10828 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-12-04T01:52:20.242+09:00  WARN 10828 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-12-04T01:52:20.714+09:00  INFO 10828 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: 
+    
+    drop table if exists article cascade 
+Hibernate: 
+    
+    drop table if exists users cascade 
+Hibernate: 
+    
+    create table article (
+       id bigint generated by default as identity,
+        content varchar(255) not null,
+        created_at timestamp(6),
+        title varchar(255) not null,
+        updated_at timestamp(6),
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table users (
+       id bigint generated by default as identity,
+        email varchar(255) not null,
+        password varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    
+    alter table if exists users 
+       add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2023-12-04T01:52:22.185+09:00  INFO 10828 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-04T01:52:22.199+09:00  INFO 10828 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-04T01:52:22.469+09:00  WARN 10828 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-04T01:52:23.947+09:00  INFO 10828 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-12-04T01:52:24.066+09:00  WARN 10828 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 734eb3bb-1b36-4738-918e-537bf1ba26a4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-12-04T01:52:24.364+09:00  INFO 10828 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a7427f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@155767a7, org.springframework.security.web.context.SecurityContextHolderFilter@53b83897, org.springframework.security.web.header.HeaderWriterFilter@61e34bec, org.springframework.security.web.csrf.CsrfFilter@c194c4e, org.springframework.security.web.authentication.logout.LogoutFilter@77e1b84c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53086bdc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6de2344a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5418a659, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73158d35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@372e972d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@428e9be2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46067a74, org.springframework.security.web.access.ExceptionTranslationFilter@53cb9b1, org.springframework.security.web.access.intercept.AuthorizationFilter@74159dc9]
+2023-12-04T01:52:24.490+09:00  INFO 10828 --- [    Test worker] me.study.config.jwt.TokenProviderTest    : Started TokenProviderTest in 8.298 seconds (process running for 10.925)
+Hibernate: 
+    insert 
+    into
+        users
+        (id, email, password) 
+    values
+        (default, ?, ?)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 2023. 12. 4. 오전 1:52:26</p>
+</div>
+</div>
+</body>
+</html>
