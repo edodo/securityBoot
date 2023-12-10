@@ -12,5 +12,5 @@ spring:
     console:
       enabled: true
 jwt:
-  issuer: csm0222@gmail.com
-  secret_key: study-springboot-jwt
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot

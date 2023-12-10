@@ -20,7 +20,7 @@ dependencies {
     implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
     implementation("io.jsonwebtoken:jjwt:0.9.1")    // JWT 라이브러리
     implementation("javax.xml.bind:jaxb-api:2.3.1") // XML과 Java간 매핑 자동화
-
+    
     runtimeOnly("com.h2database:h2")
 
     compileOnly("org.projectlombok:lombok")

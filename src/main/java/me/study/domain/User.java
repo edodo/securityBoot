@@ -1,6 +1,5 @@
 package me.study.domain;
 
-
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -35,6 +34,7 @@ public class User implements UserDetails {
         this.email = email;
         this.password = password;
     }
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
